@@ -1,5 +1,6 @@
 .DS_Store
 .idea/
 .vscode/
+.claude/settings.local.json
 *.log
 node_modules/
