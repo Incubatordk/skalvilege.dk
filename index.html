@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playdate — Din landsby i lommen</title>
+  <meta name="description" content="Playdate er en ny app til danske og internationale familier, der gør det nemt at finde legekammerater og koordinere legeaftaler.">
+  <link rel="canonical" href="https://skalvilege.dk/">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="playdate, legeaftale, legekammerater, børn, forældre, familie, app, Danmark, Copenhagen, København, expat">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Playdate — Din landsby i lommen">
+  <meta property="og:description" content="En tryggere og enklere måde at arrangere legeaftaler for børn i alderen 0–10 år.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://skalvilege.dk/">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:site_name" content="Playdate">
+  <meta property="og:image" content="https://skalvilege.dk/assets/logo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Playdate — Din landsby i lommen">
+  <meta name="twitter:description" content="En tryggere og enklere måde at arrangere legeaftaler for børn i alderen 0–10 år.">
+  <meta name="twitter:image" content="https://skalvilege.dk/assets/logo.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Playdate",
+    "url": "https://skalvilege.dk",
+    "description": "A new app for Danish and international families to find playmates and coordinate playdates.",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS, Android",
+    "inLanguage": ["da", "en"],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "DKK" },
+    "author": { "@type": "Organization", "name": "Playdate", "url": "https://skalvilege.dk" }
+  }
+  </script>
+
+  <!-- Mobile -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo-no-background.svg">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- i18n hreflang -->
+  <link rel="alternate" hreflang="da" href="https://skalvilege.dk/">
+  <link rel="alternate" hreflang="en" href="https://skalvilege.dk/">
+  <link rel="alternate" hreflang="x-default" href="https://skalvilege.dk/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css?v=__VERSION__">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Playdate">
+        <img src="assets/logo-no-background.svg" alt="Playdate" width="36" height="36">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">Funktioner</a></li>
+        <li><a href="#how-it-works" data-i18n="nav.how">Sådan virker det</a></li>
+        <li><a href="#founders" data-i18n="nav.about">Om os</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">
+          <span data-i18n="lang.toggle">EN</span>
+        </button>
+        <a href="#cta" class="btn btn-primary btn-primary-sm" data-mode-only="prelaunch" data-i18n="nav.cta">Tilmeld venteliste →</a>
+        <a href="#cta" class="btn btn-primary btn-primary-sm hidden" data-mode-only="launched" data-i18n="nav.ctaLaunched">Download →</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+
+        <!-- Copy -->
+        <div class="hero-copy">
+          <div class="hero-badge fade-up">
+            <svg class="flag-dk" viewBox="0 0 37 28" aria-hidden="true">
+              <rect width="37" height="28" fill="#C60C30"/>
+              <rect x="12" width="5" height="28" fill="white"/>
+              <rect y="12" width="37" height="4" fill="white"/>
+            </svg>
+            <span data-i18n="hero.badge">Lancerer i Danmark · 0–10 år</span>
+          </div>
+
+          <h1 class="fade-up-1">
+            <span data-i18n="hero.title1">Den trygge måde at</span><br>
+            <span class="grad-text" data-i18n="hero.title2">arrangere legeaftaler.</span>
+          </h1>
+
+          <p class="hero-sub fade-up-2" data-i18n="hero.sub">Match med nærliggende eller forbundne familier ud fra fritid, alder, interesser og afstand — og arranger en legeaftale med ét klik.</p>
+
+          <p class="hero-body fade-up-2" data-i18n="hero.body">Playdate er en ny app til forældre, der vil have en enklere og mere tryg måde at koordinere børnenes sociale liv.</p>
+
+          <!-- Prelaunch CTAs -->
+          <div class="hero-actions fade-up-3" data-mode-only="prelaunch">
+            <a href="#cta" class="btn btn-primary" data-i18n="hero.ctaWaitlist">Tilmeld venteliste →</a>
+            <a href="#features" class="btn btn-outline" data-i18n="hero.ctaSee">Se hvordan det virker</a>
+          </div>
+
+          <!-- Launched store buttons -->
+          <div class="hero-actions fade-up-3 hidden" data-mode-only="launched" style="flex-direction:row;flex-wrap:wrap;gap:12px;">
+            <a href="#" class="store-btn" data-store="appstore" aria-disabled="true" aria-label="Download on the App Store">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="store-btn-text">
+                <span class="store-btn-label" data-i18n="store.download">Download fra</span>
+                <span class="store-btn-name" data-i18n="store.appstore">App Store</span>
+              </span>
+            </a>
+            <a href="#" class="store-btn" data-store="playstore" aria-disabled="true" aria-label="Get it on Google Play">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.18 23.76c.3.17.65.19.97.06l12.49-6.62-2.7-2.7-10.76 9.26zm-1.1-20.2A1.5 1.5 0 0 0 2 4.5v15a1.5 1.5 0 0 0 .08.44l10.03-10.03L2.08 3.56zM20.4 10.5l-2.66-1.42-3.09 3.09 3.09 3.09 2.68-1.42A1.5 1.5 0 0 0 21 12.5a1.5 1.5 0 0 0-.6-2zM4.15.18L14.91 10.94l-2.7-2.7L4.15.18z"/></svg>
+              <span class="store-btn-text">
+                <span class="store-btn-label" data-i18n="store.getiton">Hent den på</span>
+                <span class="store-btn-name" data-i18n="store.playstore">Google Play</span>
+              </span>
+            </a>
+          </div>
+
+          <!-- Trust badges -->
+          <div class="trust-badges fade-up-3">
+            <div class="trust-badge"><span class="check" aria-hidden="true">✓</span><span data-i18n="trust.verified">Verificerede profiler</span></div>
+            <div class="trust-badge"><span class="check" aria-hidden="true">✓</span><span data-i18n="trust.built">Bygget af forældre</span></div>
+            <div class="trust-badge"><span class="check" aria-hidden="true">✓</span><span data-i18n="trust.free">Gratis at tilmelde</span></div>
+          </div>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="phone-wrap" aria-hidden="true">
+          <div class="phone-glow"></div>
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+
+              <div class="phone-topbar">
+                <div class="phone-greeting">
+                  <p>Good morning,</p>
+                  <p>Sarah &amp; Leo 🦁</p>
+                </div>
+                <div class="phone-avatar">
+                  <img src="assets/profile_oliver_mom.png" alt="">
+                </div>
+              </div>
+
+              <div class="phone-content">
+                <!-- Upcoming playdate -->
+                <div class="phone-card">
+                  <p class="phone-card-label">Next Playdate</p>
+                  <div class="phone-row">
+                    <div class="phone-pic">
+                      <img src="assets/profile_noah.png" alt="Noah">
+                    </div>
+                    <div>
+                      <p class="phone-name">Noah &amp; Magnus</p>
+                      <p class="phone-meta">Tomorrow · 15:00 · Fælledparken</p>
+                    </div>
+                    <span class="phone-pill">Confirmed</span>
+                  </div>
+                </div>
+
+                <!-- Invitation -->
+                <div class="phone-invite">
+                  <p class="phone-invite-title">📨 Invitation Received</p>
+                  <p>Sophie's family · Saturday 14:00</p>
+                  <div class="phone-invite-actions">
+                    <button type="button" class="phone-btn phone-btn-primary">Accept</button>
+                    <button type="button" class="phone-btn phone-btn-secondary">Decline</button>
+                  </div>
+                </div>
+
+                <p class="phone-section-title">Suggested for Leo</p>
+
+                <div class="phone-suggestion">
+                  <div class="phone-pic phone-pic-sm">
+                    <img src="assets/profile_oliver.png" alt="Oliver">
+                  </div>
+                  <div class="phone-suggestion-body">
+                    <p>Oliver (6)</p>
+                    <p>Thu 15–17</p>
+                    <span class="phone-emoji" title="Lego">🧱</span>
+                    <span class="phone-emoji" title="Dinosaurs">🦕</span>
+                  </div>
+                  <button type="button" class="phone-invite-btn">Invite</button>
+                </div>
+
+                <div class="phone-suggestion">
+                  <div class="phone-pic phone-pic-sm">
+                    <img src="assets/profile_emma.png" alt="Emma">
+                  </div>
+                  <div class="phone-suggestion-body">
+                    <p>Emma (7)</p>
+                    <p>Free Sunday</p>
+                    <span class="phone-emoji" title="Art">🎨</span>
+                    <span class="phone-emoji" title="Music">🎵</span>
+                  </div>
+                  <button type="button" class="phone-invite-btn">Invite</button>
+                </div>
+              </div>
+
+              <div class="phone-nav">
+                <div class="phone-nav-item phone-nav-item--active">
+                  <div class="phone-nav-icon">🏠</div>
+                  <div class="phone-nav-label">Home</div>
+                </div>
+                <div class="phone-nav-item">
+                  <div class="phone-nav-icon">🔍</div>
+                  <div class="phone-nav-label">Discover</div>
+                </div>
+                <div class="phone-nav-item">
+                  <div class="phone-nav-icon">💬</div>
+                  <div class="phone-nav-label">Chat</div>
+                </div>
+                <div class="phone-nav-item">
+                  <div class="phone-nav-icon">👤</div>
+                  <div class="phone-nav-label">Profile</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="features.title">Alt, din familie har brug for</h2>
+          <p data-i18n="features.sub">Én app til at finde legekammerater, koordinere kalendere og bygge varige venskaber.</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card" data-animate data-animate-delay="1">
+            <div class="feature-icon feature-icon--blue" aria-hidden="true">📅</div>
+            <h3 data-i18n="feature.schedule.title">Smart planlægning</h3>
+            <p data-i18n="feature.schedule.text">Se hvornår jeres forbundne familier er ledige.</p>
+          </div>
+          <div class="feature-card" data-animate data-animate-delay="2">
+            <div class="feature-icon feature-icon--purple" aria-hidden="true">🔍</div>
+            <h3 data-i18n="feature.nearby.title">Find nærliggende familier</h3>
+            <p data-i18n="feature.nearby.text">Find familier i nærheden på et interaktivt kort.</p>
+          </div>
+          <div class="feature-card" data-animate data-animate-delay="3">
+            <div class="feature-icon feature-icon--green" aria-hidden="true">🛡️</div>
+            <h3 data-i18n="feature.safe.title">Verificeret og trygt</h3>
+            <p data-i18n="feature.safe.text">Alle profiler er verificeret.</p>
+          </div>
+          <div class="feature-card" data-animate data-animate-delay="1">
+            <div class="feature-icon feature-icon--yellow" aria-hidden="true">🏖️</div>
+            <h3 data-i18n="feature.holiday.title">Ferietilstand</h3>
+            <p data-i18n="feature.holiday.text">Find legekammerater på ferien.</p>
+          </div>
+          <div class="feature-card" data-animate data-animate-delay="2">
+            <div class="feature-icon feature-icon--pink" aria-hidden="true">💬</div>
+            <h3 data-i18n="feature.chat.title">Enkel beskedfunktion</h3>
+            <p data-i18n="feature.chat.text">Koordiner direkte i appen.</p>
+          </div>
+          <div class="feature-card" data-animate data-animate-delay="3">
+            <div class="feature-icon feature-icon--indigo" aria-hidden="true">🌍</div>
+            <h3 data-i18n="feature.lang.title">Dansk og engelsk</h3>
+            <p data-i18n="feature.lang.text">Fuldt tosproget.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="how">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="how.title">Sådan virker det</h2>
+          <p data-i18n="how.sub">I gang på få minutter.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step" data-animate data-animate-delay="1">
+            <div class="step-num step-num--1">1</div>
+            <h3 data-i18n="how.step1.title">Opret jeres familieprofil</h3>
+            <p data-i18n="how.step1.text">Tilmeld med e-mail eller Google/Apple.</p>
+          </div>
+          <div class="step" data-animate data-animate-delay="2">
+            <div class="step-num step-num--2">2</div>
+            <h3 data-i18n="how.step2.title">Find og forbind</h3>
+            <p data-i18n="how.step2.text">Udforsk familier på kortet.</p>
+          </div>
+          <div class="step" data-animate data-animate-delay="3">
+            <div class="step-num step-num--3">3</div>
+            <h3 data-i18n="how.step3.title">Leg!</h3>
+            <p data-i18n="how.step3.text">Kids play, parents relax.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="stats-grid">
+        <div>
+          <div class="stat-value grad-text">0–10</div>
+          <p class="stat-label" data-i18n="stats.age">Aldersgruppe</p>
+        </div>
+        <div>
+          <div class="stat-value grad-text">100%</div>
+          <p class="stat-label" data-i18n="stats.verified">Verificerede profiler</p>
+        </div>
+        <div>
+          <div class="stat-flag" aria-hidden="true">
+            <svg viewBox="0 0 37 28">
+              <rect width="37" height="28" fill="#C60C30"/>
+              <rect x="12" width="5" height="28" fill="white"/>
+              <rect y="12" width="37" height="4" fill="white"/>
+            </svg>
+          </div>
+          <p class="stat-label" data-i18n="stats.launch">Lancerer i Danmark</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="test.title">Hvad forældre siger</h2>
+          <p data-i18n="test.sub">Fra vores tidlige adgangsfamilier</p>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="testimonial" data-animate data-animate-delay="1">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p data-i18n="test.1">"Finally an app..."</p>
+            <div class="testimonial-author">
+              <div class="avatar"><img src="assets/profile_oliver_mom.png" alt=""></div>
+              <div>
+                <p class="testimonial-name" data-i18n="test.1.name">Sarah M.</p>
+                <p class="testimonial-meta" data-i18n="test.1.meta">Copenhagen · 2 kids</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial" data-animate data-animate-delay="2">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p data-i18n="test.2">"We moved from the UK..."</p>
+            <div class="testimonial-author">
+              <div class="avatar"><img src="assets/profile_sophie_dad.png" alt=""></div>
+              <div>
+                <p class="testimonial-name" data-i18n="test.2.name">James T.</p>
+                <p class="testimonial-meta" data-i18n="test.2.meta">Aarhus · Expat family</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial" data-animate data-animate-delay="3">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p data-i18n="test.3">"The verified profiles..."</p>
+            <div class="testimonial-author">
+              <div class="avatar" aria-hidden="true">MR</div>
+              <div>
+                <p class="testimonial-name" data-i18n="test.3.name">Mette R.</p>
+                <p class="testimonial-meta" data-i18n="test.3.meta">Odense · 3 kids</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founders -->
+    <section id="founders" class="founders">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="founders.title">Mød grundlæggerne</h2>
+          <p data-i18n="founders.sub">Bygget af forældre.</p>
+        </div>
+
+        <div class="founders-grid">
+          <div class="founder" data-animate data-animate-delay="1">
+            <div class="founder-head">
+              <div class="founder-pic"><img src="assets/jinhong_brejnholt.png" alt="Jinhong"></div>
+              <div>
+                <a href="https://www.linkedin.com/in/jbrejnholt/" target="_blank" rel="noopener noreferrer" class="founder-name">Jinhong</a>
+                <p class="founder-role" data-i18n="founder.jinhong.role">Founder, Bitecloud</p>
+              </div>
+            </div>
+            <p class="founder-bio" data-i18n="founder.jinhong.bio">Engineering executive...</p>
+          </div>
+
+          <div class="founder" data-animate data-animate-delay="2">
+            <div class="founder-head">
+              <div class="founder-pic"><img src="assets/jimmi_hested.png" alt="Jimmi"></div>
+              <div>
+                <a href="https://www.linkedin.com/in/jhested/" target="_blank" rel="noopener noreferrer" class="founder-name">Jimmi</a>
+                <p class="founder-role" data-i18n="founder.jimmi.role">Principal Engineer</p>
+              </div>
+            </div>
+            <p class="founder-bio" data-i18n="founder.jimmi.bio">With 15+ years...</p>
+          </div>
+
+          <div class="founder" data-animate data-animate-delay="3">
+            <div class="founder-head">
+              <div class="founder-pic"><img src="assets/robert_jensen.jpeg" alt="Robert"></div>
+              <div>
+                <a href="https://www.linkedin.com/in/robert-jensen-devops/" target="_blank" rel="noopener noreferrer" class="founder-name">Robert</a>
+                <p class="founder-role" data-i18n="founder.robert.role">DevOps Consultant</p>
+              </div>
+            </div>
+            <p class="founder-bio" data-i18n="founder.robert.bio">With 15+ years...</p>
+          </div>
+        </div>
+
+        <div class="mission" data-animate>
+          <h3 data-i18n="mission.title">Vores mission</h3>
+          <p data-i18n="mission.text">Hvert barn fortjener...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / Waitlist -->
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <!-- Prelaunch -->
+        <div data-mode-only="prelaunch">
+          <span class="cta-badge" data-i18n="cta.badge">🚀 Kommer snart</span>
+          <h2>
+            <span data-i18n="cta.title1">Klar til at få legeaftaler til</span><br>
+            <span data-i18n="cta.title2">faktisk at ske?</span>
+          </h2>
+          <p class="cta-sub" data-i18n="cta.sub">Tilmeld dig ventelisten.</p>
+
+          <form id="signup-form" class="signup-form">
+            <input type="email" name="email" required
+                   placeholder="Indtast din e-mailadresse"
+                   data-i18n-placeholder="signup.placeholder"
+                   aria-label="Email address">
+            <button type="submit" data-i18n="signup.button">Tilmeld →</button>
+          </form>
+
+          <div id="signup-success" class="signup-success" data-i18n="signup.success">
+            Tak fordi du tilmelder dig! 🎉
+          </div>
+
+          <p class="signup-note" data-i18n="signup.note" style="margin-top: 16px;">Ingen spam.</p>
+
+          <!-- Coming-soon store badges -->
+          <div class="store-buttons">
+            <a href="#" class="store-btn" aria-disabled="true" tabindex="-1">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="store-btn-text">
+                <span class="store-btn-label" data-i18n="store.download">Download fra</span>
+                <span class="store-btn-name" data-i18n="store.appstore">App Store</span>
+              </span>
+            </a>
+            <a href="#" class="store-btn" aria-disabled="true" tabindex="-1">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.18 23.76c.3.17.65.19.97.06l12.49-6.62-2.7-2.7-10.76 9.26zm-1.1-20.2A1.5 1.5 0 0 0 2 4.5v15a1.5 1.5 0 0 0 .08.44l10.03-10.03L2.08 3.56zM20.4 10.5l-2.66-1.42-3.09 3.09 3.09 3.09 2.68-1.42A1.5 1.5 0 0 0 21 12.5a1.5 1.5 0 0 0-.6-2zM4.15.18L14.91 10.94l-2.7-2.7L4.15.18z"/></svg>
+              <span class="store-btn-text">
+                <span class="store-btn-label" data-i18n="store.getiton">Hent den på</span>
+                <span class="store-btn-name" data-i18n="store.playstore">Google Play</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Launched -->
+        <div class="hidden" data-mode-only="launched">
+          <h2>
+            <span data-i18n="launched.title1">Playdates,</span><br>
+            <span data-i18n="launched.title2">made simple.</span>
+          </h2>
+          <p class="cta-sub" data-i18n="launched.sub">Download Playdate.</p>
+
+          <div class="store-buttons">
+            <a href="#" class="store-btn" data-store="appstore" aria-disabled="true" aria-label="Download on the App Store">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span class="store-btn-text">
+                <span class="store-btn-label" data-i18n="store.download">Download fra</span>
+                <span class="store-btn-name" data-i18n="store.appstore">App Store</span>
+              </span>
+            </a>
+            <a href="#" class="store-btn" data-store="playstore" aria-disabled="true" aria-label="Get it on Google Play">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.18 23.76c.3.17.65.19.97.06l12.49-6.62-2.7-2.7-10.76 9.26zm-1.1-20.2A1.5 1.5 0 0 0 2 4.5v15a1.5 1.5 0 0 0 .08.44l10.03-10.03L2.08 3.56zM20.4 10.5l-2.66-1.42-3.09 3.09 3.09 3.09 2.68-1.42A1.5 1.5 0 0 0 21 12.5a1.5 1.5 0 0 0-.6-2zM4.15.18L14.91 10.94l-2.7-2.7L4.15.18z"/></svg>
+              <span class="store-btn-text">
+                <span class="store-btn-label" data-i18n="store.getiton">Hent den på</span>
+                <span class="store-btn-name" data-i18n="store.playstore">Google Play</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo-color.svg" alt="Playdate">
+          <p data-i18n="footer.about">Gør koordinering af legeaftaler ubesværet.</p>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.quick">Hurtige links</h4>
+          <ul>
+            <li><a href="#home" data-i18n="footer.home">Hjem</a></li>
+            <li><a href="#features" data-i18n="footer.features">Funktioner</a></li>
+            <li><a href="#how-it-works" data-i18n="footer.how">Sådan virker det</a></li>
+            <li><a href="#founders" data-i18n="footer.about2">Om os</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.featuresTitle">Funktioner</h4>
+          <ul>
+            <li data-i18n="footer.smart">Smart planlægning</li>
+            <li data-i18n="footer.holiday">Ferietilstand</li>
+            <li data-i18n="footer.verified">Verificerede profiler</li>
+            <li data-i18n="footer.bilingual">Tosproget support</li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 data-i18n="footer.contactTitle">Kontakt</h4>
+          <p><a href="mailto:playdate@skalvilege.dk">playdate@skalvilege.dk</a></p>
+          <p>
+            <svg class="flag-dk" viewBox="0 0 37 28" aria-hidden="true" style="display:inline-block;vertical-align:-2px;margin-right:4px">
+              <rect width="37" height="28" fill="#C60C30"/>
+              <rect x="12" width="5" height="28" fill="white"/>
+              <rect y="12" width="37" height="4" fill="white"/>
+            </svg>
+            <span data-i18n="footer.based">Baseret i Danmark</span>
+          </p>
+          <button type="button" class="footer-contact-btn"
+                  data-contact-open
+                  data-i18n="contact.open"
+                  data-i18n-aria="contact.openAria"
+                  aria-label="Åbn kontaktformular">Kontakt</button>
+          <a href="#cta" class="btn btn-primary btn-primary-sm"
+             data-mode-only="prelaunch"
+             data-i18n="footer.cta"
+             style="margin-top: 16px;">Tilmeld venteliste →</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copy">© 2026 Playdate. Alle rettigheder forbeholdes.</p>
+        <div class="footer-links" style="display: flex; gap: 24px;">
+          <a href="/privacy-policy" data-i18n="footer.privacy">Privatlivspolitik</a>
+          <a href="/terms.html" data-i18n="footer.terms">Vilkår og betingelser</a>
+        </div>
+        <p data-i18n="footer.built">Bygget med ❤️ af forældre, for forældre.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact modal -->
+  <div id="contact-modal" class="modal" hidden aria-hidden="true"
+       role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-dialog" role="document">
+      <button type="button" class="modal-close" data-modal-close
+              data-i18n-aria="contact.close" aria-label="Luk">&times;</button>
+      <h2 id="contact-modal-title" data-i18n="contact.title">Kontakt os</h2>
+      <p data-i18n="contact.text">Har du spørgsmål? Send os en besked.</p>
+
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" required maxlength="200"
+               placeholder="Dit navn"
+               data-i18n-placeholder="contact.namePlaceholder"
+               data-i18n-aria="contact.name" aria-label="Navn">
+        <input type="email" name="email" required maxlength="320"
+               placeholder="Din e-mail"
+               data-i18n-placeholder="contact.emailPlaceholder"
+               data-i18n-aria="contact.email" aria-label="E-mail">
+        <input type="text" name="subject" required maxlength="200"
+               placeholder="Hvad handler det om?"
+               data-i18n-placeholder="contact.subjectPlaceholder"
+               data-i18n-aria="contact.subject" aria-label="Emne">
+        <textarea name="message" required maxlength="5000" rows="5"
+                  placeholder="Skriv din besked"
+                  data-i18n-placeholder="contact.messagePlaceholder"
+                  data-i18n-aria="contact.message" aria-label="Besked"></textarea>
+        <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Send besked</button>
+      </form>
+
+      <div id="contact-success" class="contact-success" data-i18n="contact.success">
+        Tak! Vi vender tilbage så hurtigt som muligt.
+      </div>
+      <div id="contact-error" class="contact-error" hidden data-i18n="contact.error">
+        Noget gik galt. Prøv igen eller skriv til playdate@skalvilege.dk.
+      </div>
+    </div>
+  </div>
+
+  <script defer src="site.config.js?v=__VERSION__"></script>
+  <script defer src="js/i18n.js?v=__VERSION__"></script>
+  <script defer src="js/main.js?v=__VERSION__"></script>
+</body>
+</html>
