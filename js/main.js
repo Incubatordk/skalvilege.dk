@@ -68,7 +68,7 @@
       var endpoint = SITE_CONFIG.APPWRITE_ENDPOINT;
       var projectId = SITE_CONFIG.APPWRITE_PROJECT_ID;
       var databaseId = SITE_CONFIG.APPWRITE_DATABASE_ID;
-      var collectionId = SITE_CONFIG.APPWRITE_COLLECTION_ID;
+      var tableId = SITE_CONFIG.APPWRITE_TABLE_ID;
 
       function showSuccess() {
         signupForm.classList.add("hidden");
@@ -82,7 +82,7 @@
         return;
       }
 
-      var url = endpoint + "/databases/" + databaseId + "/collections/" + collectionId + "/documents";
+      var url = endpoint + "/tablesdb/" + databaseId + "/tables/" + tableId + "/rows";
 
       fetch(url, {
         method: "POST",
@@ -91,7 +91,7 @@
           "X-Appwrite-Project": projectId,
         },
         body: JSON.stringify({
-          documentId: "unique()",
+          rowId: "unique()",
           data: { email: email },
         }),
       })
@@ -167,7 +167,7 @@
       var endpoint = SITE_CONFIG.APPWRITE_APP_ENDPOINT;
       var projectId = SITE_CONFIG.APPWRITE_APP_PROJECT_ID;
       var databaseId = SITE_CONFIG.APPWRITE_DATABASE_ID;
-      var collectionId = SITE_CONFIG.APPWRITE_CONTACT_COLLECTION_ID;
+      var tableId = SITE_CONFIG.APPWRITE_CONTACT_TABLE_ID;
 
       function showSuccess() {
         contactForm.classList.add("hidden");
@@ -185,7 +185,7 @@
         return;
       }
 
-      var url = endpoint + "/databases/" + databaseId + "/collections/" + collectionId + "/documents";
+      var url = endpoint + "/tablesdb/" + databaseId + "/tables/" + tableId + "/rows";
 
       fetch(url, {
         method: "POST",
@@ -193,7 +193,7 @@
           "Content-Type": "application/json",
           "X-Appwrite-Project": projectId,
         },
-        body: JSON.stringify({ documentId: "unique()", data: data }),
+        body: JSON.stringify({ rowId: "unique()", data: data }),
       })
         .then(function (response) {
           if (!response.ok) {
