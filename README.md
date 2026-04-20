@@ -38,7 +38,15 @@ The waitlist form and contact form post to Appwrite. Until project IDs are fille
 
 ## Deployment
 
-Pushes to `main` auto-deploy to GitHub Pages via `.github/workflows/deploy.yml`. The `CNAME` file binds the custom domain `skalvilege.dk`.
+Pushes to `main` auto-deploy to GitHub Pages via `.github/workflows/deploy.yml`.
+
+Current public preview URL:
+
+```
+https://incubatordk.github.io/skalvilege.dk/
+```
+
+When the custom domain is moved, add a `CNAME` file containing `skalvilege.dk` and update canonical, sitemap, RSS and Open Graph URLs to `https://skalvilege.dk`.
 
 ## Structure
 
@@ -52,6 +60,5 @@ assets/                 — Logos, founder photos, profile images
 privacy-policy/         — GDPR privacy policy (da + en)
 terms.html              — Terms & Conditions
 robots.txt, sitemap.xml — SEO basics
-CNAME                   — GitHub Pages custom domain
 .nojekyll               — Skip Jekyll processing on GH Pages
 ```
