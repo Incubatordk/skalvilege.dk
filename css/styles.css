@@ -1057,6 +1057,169 @@ button {
 }
 
 /* ==========================================================================
+   Blog
+   ========================================================================== */
+
+.blog-hero {
+  padding: var(--space-4xl) 0 var(--space-2xl);
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(219, 234, 254, 0.55), rgba(255, 255, 255, 0));
+}
+
+.eyebrow {
+  margin-bottom: var(--space-md);
+  font-size: var(--text-sm);
+  font-weight: 800;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.blog-hero h1 {
+  max-width: 760px;
+  margin: 0 auto var(--space-md);
+  font-size: var(--text-5xl);
+  font-weight: 900;
+}
+
+.blog-hero p:last-child {
+  max-width: 660px;
+  margin: 0 auto;
+  font-size: var(--text-xl);
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+
+.blog-list-section {
+  padding: 0 0 var(--space-4xl);
+}
+
+.blog-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+  background: #fff;
+  border: 1px solid #e5e7ff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.blog-card-image {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  aspect-ratio: 1408 / 768;
+  background: #dbeafe;
+}
+
+.blog-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-card-body h2 {
+  margin-bottom: var(--space-sm);
+  font-size: var(--text-3xl);
+  line-height: 1.16;
+}
+
+.blog-card-body h2 a {
+  color: var(--color-text);
+}
+
+.blog-card-body p:not(.post-meta) {
+  margin-bottom: var(--space-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+}
+
+.post-meta {
+  margin-bottom: var(--space-sm);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.read-more,
+.back-link {
+  font-size: var(--text-base);
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: var(--space-xs) var(--space-sm);
+}
+
+.back-link::before {
+  content: "\2190";
+  margin-right: var(--space-xs);
+}
+
+.post-header {
+  padding: var(--space-4xl) 0 var(--space-2xl);
+  text-align: center;
+}
+
+.post-header-inner {
+  max-width: 900px;
+}
+
+.post-header .back-link {
+  margin-bottom: var(--space-lg);
+}
+
+.post-header h1 {
+  max-width: 840px;
+  margin: 0 auto var(--space-lg);
+  font-size: var(--text-5xl);
+  font-weight: 900;
+}
+
+.post-dek {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: var(--text-xl);
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+
+.post-hero-image {
+  width: min(920px, calc(100% - 48px));
+  margin: 0 auto var(--space-3xl);
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: #dbeafe;
+  box-shadow: var(--shadow-lg);
+}
+
+.post-hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.post-content {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg) var(--space-4xl);
+}
+
+.post-content p {
+  margin-bottom: var(--space-lg);
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+/* ==========================================================================
    Waitlist CTA
    ========================================================================== */
 
@@ -1308,6 +1471,21 @@ button {
   text-align: center;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.footer-links a {
+  color: #9ca3af;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
 /* ==========================================================================
    Contact modal
    ========================================================================== */
@@ -1519,6 +1697,40 @@ button {
   .hero {
     padding: var(--space-xl) 0 var(--space-2xl);
   }
+
+  .blog-hero {
+    padding: var(--space-2xl) 0 var(--space-xl);
+  }
+
+  .blog-hero h1,
+  .post-header h1 {
+    font-size: var(--text-3xl);
+    overflow-wrap: break-word;
+  }
+
+  .blog-hero p:last-child,
+  .post-dek,
+  .post-content p {
+    font-size: var(--text-base);
+  }
+
+  .blog-card {
+    padding: var(--space-md);
+    gap: var(--space-lg);
+  }
+
+  .post-header {
+    padding: var(--space-2xl) 0 var(--space-xl);
+  }
+
+  .post-hero-image {
+    width: calc(100% - 32px);
+    margin-bottom: var(--space-xl);
+  }
+
+  .post-content {
+    padding: 0 var(--space-md) var(--space-2xl);
+  }
 }
 
 /* ==========================================================================
@@ -1568,6 +1780,10 @@ button {
 
   .nav-links {
     display: flex;
+  }
+
+  .blog-card {
+    grid-template-columns: minmax(220px, 0.55fr) 1fr;
   }
 }
 
