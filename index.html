@@ -29,15 +29,94 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Playdate",
-    "url": "https://incubatordk.github.io/skalvilege.dk",
-    "description": "A new app for Danish and international families to find playmates and coordinate playdates.",
-    "applicationCategory": "LifestyleApplication",
-    "operatingSystem": "iOS, Android",
-    "inLanguage": ["da", "en"],
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "DKK" },
-    "author": { "@type": "Organization", "name": "Playdate", "url": "https://incubatordk.github.io/skalvilege.dk" }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://incubatordk.github.io/skalvilege.dk/#organization",
+        "name": "Playdate",
+        "url": "https://incubatordk.github.io/skalvilege.dk/",
+        "logo": "https://incubatordk.github.io/skalvilege.dk/assets/logo-color.svg",
+        "email": "playdate@skalvilege.dk",
+        "areaServed": { "@type": "Country", "name": "Denmark" },
+        "founder": [
+          { "@type": "Person", "name": "Jinhong Brejnholt", "sameAs": "https://www.linkedin.com/in/jbrejnholt/" },
+          { "@type": "Person", "name": "Jimmi Hested", "sameAs": "https://www.linkedin.com/in/jhested/" },
+          { "@type": "Person", "name": "Robert Jensen", "sameAs": "https://www.linkedin.com/in/robert-jensen-devops/" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://incubatordk.github.io/skalvilege.dk/#website",
+        "url": "https://incubatordk.github.io/skalvilege.dk/",
+        "name": "Playdate",
+        "publisher": { "@id": "https://incubatordk.github.io/skalvilege.dk/#organization" },
+        "inLanguage": ["da-DK", "en-GB"]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Playdate",
+        "url": "https://incubatordk.github.io/skalvilege.dk/",
+        "description": "A new app for Danish and international families to find playmates and coordinate playdates for children aged 0–10.",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "iOS, Android",
+        "inLanguage": ["da", "en"],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "DKK" },
+        "publisher": { "@id": "https://incubatordk.github.io/skalvilege.dk/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Hvad er Playdate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Playdate er en ny app til danske og internationale familier, der gør det nemt at finde legekammerater og koordinere legeaftaler for børn i alderen 0–10 år."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hvem kan bruge Playdate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Forældre i Danmark — både danske familier og internationale, der slår sig ned her. Appen er fuldt tosproget på dansk og engelsk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hvordan virker det?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Opret en familieprofil, find nærliggende eller forbundne familier på et interaktivt kort, og send en invitation til en legeaftale. Når den er bekræftet, sendes påmindelser automatisk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hvor sikker er Playdate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Alle profiler er verificeret. Børns billeder er privatlivsbeskyttede, indtil familier er gensidigt forbundet, og telefonnumre deles aldrig automatisk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hvad koster det?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Det er gratis at tilmelde sig ventelisten. Appen lancerer i Danmark."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan jeg bruge Playdate på ferien?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Ferietilstand lader jer finde legekammerater i Lalandia, Center Parcs eller hvor som helst i Danmark, mens I er afsted."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -48,10 +127,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/logo-no-background.svg">
   <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="manifest" href="manifest.webmanifest">
 
-  <!-- i18n hreflang -->
-  <link rel="alternate" hreflang="da" href="https://incubatordk.github.io/skalvilege.dk/">
-  <link rel="alternate" hreflang="en" href="https://incubatordk.github.io/skalvilege.dk/">
+  <!-- i18n hreflang — single URL serves both languages via JS toggle -->
   <link rel="alternate" hreflang="x-default" href="https://incubatordk.github.io/skalvilege.dk/">
 
   <!-- Fonts -->
@@ -165,7 +243,7 @@
                   <p>Sarah &amp; Leo 🦁</p>
                 </div>
                 <div class="phone-avatar">
-                  <img src="assets/profile_oliver_mom.png" alt="">
+                  <img src="assets/profile_oliver_mom.png" alt="" loading="lazy" decoding="async" width="40" height="40">
                 </div>
               </div>
 
@@ -175,7 +253,7 @@
                   <p class="phone-card-label">Next Playdate</p>
                   <div class="phone-row">
                     <div class="phone-pic">
-                      <img src="assets/profile_noah.png" alt="Noah">
+                      <img src="assets/profile_noah.png" alt="Noah" loading="lazy" decoding="async" width="48" height="48">
                     </div>
                     <div>
                       <p class="phone-name">Noah &amp; Magnus</p>
@@ -199,7 +277,7 @@
 
                 <div class="phone-suggestion">
                   <div class="phone-pic phone-pic-sm">
-                    <img src="assets/profile_oliver.png" alt="Oliver">
+                    <img src="assets/profile_oliver.png" alt="Oliver" loading="lazy" decoding="async" width="40" height="40">
                   </div>
                   <div class="phone-suggestion-body">
                     <p>Oliver (6)</p>
@@ -212,7 +290,7 @@
 
                 <div class="phone-suggestion">
                   <div class="phone-pic phone-pic-sm">
-                    <img src="assets/profile_emma.png" alt="Emma">
+                    <img src="assets/profile_emma.png" alt="Emma" loading="lazy" decoding="async" width="40" height="40">
                   </div>
                   <div class="phone-suggestion-body">
                     <p>Emma (7)</p>
@@ -357,7 +435,7 @@
             <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p data-i18n="test.1">"Finally an app..."</p>
             <div class="testimonial-author">
-              <div class="avatar"><img src="assets/profile_oliver_mom.png" alt=""></div>
+              <div class="avatar"><img src="assets/profile_oliver_mom.png" alt="" loading="lazy" decoding="async" width="40" height="40"></div>
               <div>
                 <p class="testimonial-name" data-i18n="test.1.name">Sarah M.</p>
                 <p class="testimonial-meta" data-i18n="test.1.meta">Copenhagen · 2 kids</p>
@@ -369,7 +447,7 @@
             <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p data-i18n="test.2">"We moved from the UK..."</p>
             <div class="testimonial-author">
-              <div class="avatar"><img src="assets/profile_sophie_dad.png" alt=""></div>
+              <div class="avatar"><img src="assets/profile_sophie_dad.png" alt="" loading="lazy" decoding="async" width="40" height="40"></div>
               <div>
                 <p class="testimonial-name" data-i18n="test.2.name">James T.</p>
                 <p class="testimonial-meta" data-i18n="test.2.meta">Aarhus · Expat family</p>
@@ -403,7 +481,7 @@
         <div class="founders-grid">
           <div class="founder" data-animate data-animate-delay="1">
             <div class="founder-head">
-              <div class="founder-pic"><img src="assets/jinhong_brejnholt.png" alt="Jinhong"></div>
+              <div class="founder-pic"><img src="assets/jinhong_brejnholt.png" alt="Jinhong Brejnholt" loading="lazy" decoding="async" width="80" height="80"></div>
               <div>
                 <a href="https://www.linkedin.com/in/jbrejnholt/" target="_blank" rel="noopener noreferrer" class="founder-name">Jinhong</a>
                 <p class="founder-role" data-i18n="founder.jinhong.role">Founder, Bitecloud</p>
@@ -414,7 +492,7 @@
 
           <div class="founder" data-animate data-animate-delay="2">
             <div class="founder-head">
-              <div class="founder-pic"><img src="assets/jimmi_hested.png" alt="Jimmi"></div>
+              <div class="founder-pic"><img src="assets/jimmi_hested.png" alt="Jimmi Hested" loading="lazy" decoding="async" width="80" height="80"></div>
               <div>
                 <a href="https://www.linkedin.com/in/jhested/" target="_blank" rel="noopener noreferrer" class="founder-name">Jimmi</a>
                 <p class="founder-role" data-i18n="founder.jimmi.role">Principal Engineer</p>
@@ -425,7 +503,7 @@
 
           <div class="founder" data-animate data-animate-delay="3">
             <div class="founder-head">
-              <div class="founder-pic"><img src="assets/robert_jensen.jpeg" alt="Robert"></div>
+              <div class="founder-pic"><img src="assets/robert_jensen.jpeg" alt="Robert Jensen" loading="lazy" decoding="async" width="80" height="80"></div>
               <div>
                 <a href="https://www.linkedin.com/in/robert-jensen-devops/" target="_blank" rel="noopener noreferrer" class="founder-name">Robert</a>
                 <p class="founder-role" data-i18n="founder.robert.role">DevOps Consultant</p>
@@ -523,7 +601,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/logo-color.svg" alt="Playdate">
+          <img src="assets/logo-color.svg" alt="Playdate" loading="lazy" decoding="async" width="120" height="40">
           <p data-i18n="footer.about">Gør koordinering af legeaftaler ubesværet.</p>
         </div>
 

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Playdate Blog</title>
     <link>https://incubatordk.github.io/skalvilege.dk/blog/</link>
@@ -18,8 +21,28 @@
       <link>https://incubatordk.github.io/skalvilege.dk/blog/lordag-formiddag/</link>
       <guid isPermaLink="true">https://incubatordk.github.io/skalvilege.dk/blog/lordag-formiddag/</guid>
       <pubDate>Mon, 20 Apr 2026 06:00:00 +0000</pubDate>
+      <dc:creator>Playdate</dc:creator>
       <author>playdate@skalvilege.dk (Playdate)</author>
+      <category>Familieliv</category>
       <description>Barnet spørger, om man skal lege med nogen i dag. Numrene ligger i telefonen. Alligevel bliver der ikke skrevet.</description>
+      <content:encoded><![CDATA[
+        <p><img src="https://incubatordk.github.io/skalvilege.dk/assets/blog/playdate-19-04.jpg" alt="Et barn bygger LEGO lørdag formiddag, mens en forælder overvejer en legeaftale" /></p>
+        <p>Lørdag kvart over ni. Et barn sidder på gulvet med en bunke LEGO, kigger op og spørger: "Skal vi lege med nogen i dag?"</p>
+        <p>Forælderen tænker på, hvem der kunne skrives til.</p>
+        <p>Der er tre-fire familier, hvis børn det rigtig gerne må være. Numrene ligger i telefonen. Et par af dem måske endda på WhatsApp. Men spørgsmålet sidder fast et sted mellem "det er vel også lidt sent at skrive nu" og "de har sikkert allerede planer" og den lille tøven ved at skrive til én specifik forælder, når det lige så godt kunne være en anden familie, der havde en rolig formiddag.</p>
+        <p>Beskeden bliver ikke sendt. Barnet sender den heller ikke selv, for det er fire år gammelt.</p>
+        <p>Klokken bliver elleve. Klokken bliver halv tolv. Det bliver til frokost derhjemme og en tur i nærmeste park, hvor ingen kendte dukker op. Alt er fint. Men det, barnet faktisk spurgte om klokken ni, skete ikke.</p>
+        <p>Det her er det problem, Skal vi lege? blev lavet til.</p>
+        <p>Det er ikke et helt bookingsystem eller en ny kalender, der skal vedligeholdes. Bare et sted, hvor man som forælder kan lægge op, at man er hjemme lørdag fra ti til tolv, at man har en fireårig, der elsker at bygge LEGO, og at man gerne tager imod. Og så ser man, hvem der melder sig.</p>
+        <p>Det er den måde, playdates bliver til, når det lykkes: en tråd i en mor-gruppe på Facebook, en kort besked, et tilfældigt møde i børnehaven. Det er bare ikke den måde, det lykkes om lørdagen, når planen er "vi ser, hvordan dagen udvikler sig."</p>
+        <p>Problemet er ikke viljen. Det er tærsklen.</p>
+        <p>At skrive til én specifik forælder lørdag formiddag er en større handling end den fortjener. Det føles som at invitere til selskab. At lægge op, at man er hjemme og åben, er nul. Det kræver ikke, at nogen skal sige nej. Det kræver ikke, at man vælger, hvem man spørger først.</p>
+        <p>For forældrene betyder det, at lørdag formiddag ikke længere er en pause, hvor ingen skriver. For barnet betyder det, at spørgsmålet faktisk bliver besvaret.</p>
+        <p>Vi har tænkt en hel del over, hvad app'en skal gøre for at være tryg: verificerede profiler, billeder af børn beskyttet som standard, ingen telefonnumre der deles automatisk. Det handler ikke om at gøre folk bange for noget, der ikke er der. Det handler om, at man skal kunne sige ja til en playdate på tværs af familier uden at give private oplysninger væk i et opslag. Det er en praktisk del af, at det overhovedet fungerer.</p>
+        <p>Men den vigtigste del er stadig den enkle.</p>
+        <p>Barnet spørger: "Skal vi lege?" Og om lørdagen klokken kvart over ni er der faktisk et sted, hvor man kan få svaret.</p>
+        <p>Danske fireårige lærer det tidligt: at spørgsmålet findes. Arbejdet, for de voksne, er at blive lige så gode til at stille det.</p>
+      ]]></content:encoded>
     </item>
   </channel>
 </rss>

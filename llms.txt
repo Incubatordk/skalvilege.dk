@@ -1,0 +1,30 @@
+# Playdate
+
+> Playdate (skalvilege.dk) is a mobile app for Danish and international families that makes it easier to find playmates and arrange playdates for children aged 0–10. The site is the public landing page and waitlist for the prelaunch in Denmark.
+
+The product is built around a simple idea: most parents already know which families they'd like their kids to play with, but the threshold for actually arranging it is too high. Playdate lowers that threshold with verified profiles, an availability-aware calendar, an interactive map of nearby families, in-app messaging, and a holiday mode that finds playmates wherever a family travels in Denmark. The app is fully bilingual (Danish + English).
+
+The site is a single static landing page (Danish content with a JS language toggle to English) plus a small blog and standard legal pages. It is hosted on GitHub Pages at `incubatordk.github.io/skalvilege.dk`.
+
+## Pages
+
+- [Home](https://incubatordk.github.io/skalvilege.dk/): Product overview, features, how it works, founders, waitlist signup
+- [Blog](https://incubatordk.github.io/skalvilege.dk/blog/): Notes on playdates, parenting, family life
+- [Privacy policy](https://incubatordk.github.io/skalvilege.dk/privacy-policy/): Danish GDPR-compliant privacy policy
+- [Terms](https://incubatordk.github.io/skalvilege.dk/terms.html): Terms of service
+
+## Blog posts
+
+- [Lørdag formiddag, og ingen har spurgt endnu](https://incubatordk.github.io/skalvilege.dk/blog/lordag-formiddag/): Bilingual essay (Danish + English) on the threshold for arranging a Saturday-morning playdate, and why an "I'm home and open" post is a smaller ask than messaging one specific parent.
+
+## Feeds
+
+- [Blog RSS](https://incubatordk.github.io/skalvilege.dk/blog/feed.xml)
+- [Sitemap](https://incubatordk.github.io/skalvilege.dk/sitemap.xml)
+
+## About
+
+- Founders: Jinhong Brejnholt (cloud-native executive, founder of Bitecloud), Jimmi Hested (principal engineer), Robert Jensen (DevOps consultant). All are parents based in Denmark.
+- Status: Prelaunch — waitlist open, app not yet shipped on App Store / Google Play.
+- Target market: Denmark (Danish + English-speaking expat families), children aged 0–10.
+- Contact: playdate@skalvilege.dk
