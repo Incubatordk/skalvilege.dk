@@ -222,6 +222,39 @@
     onScroll();
   }
 
+  // ---- Mobile menu toggle ----
+
+  var navToggle = document.getElementById("nav-toggle");
+  var navMenu = document.getElementById("nav-menu");
+  if (navToggle && nav && navMenu) {
+    var setMenu = function (open) {
+      nav.setAttribute("data-menu-open", open ? "true" : "false");
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    };
+
+    navToggle.addEventListener("click", function () {
+      var open = nav.getAttribute("data-menu-open") !== "true";
+      setMenu(open);
+    });
+
+    navMenu.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") setMenu(false);
+    });
+
+    document.addEventListener("click", function (e) {
+      if (nav.getAttribute("data-menu-open") !== "true") return;
+      if (nav.contains(e.target)) return;
+      setMenu(false);
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && nav.getAttribute("data-menu-open") === "true") {
+        setMenu(false);
+        navToggle.focus();
+      }
+    });
+  }
+
   // ---- Scroll-triggered animations ----
 
   var animated = document.querySelectorAll("[data-animate]");

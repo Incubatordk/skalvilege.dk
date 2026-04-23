@@ -24,6 +24,7 @@ var I18N = (function () {
       "nav.cta": "Tilmeld venteliste →",
       "nav.ctaShort": "Tilmeld",
       "nav.ctaLaunched": "Download →",
+      "nav.menu": "Åbn menu",
       "lang.toggle": "EN",
 
       // Hero
@@ -93,6 +94,18 @@ var I18N = (function () {
       "founder.robert.bio": "Med 15+ års erfaring i cloud- og platform engineering bringer Robert dyb DevOps-ekspertise til teamet — fra CI/CD og Kubernetes til Terraform og multi-cloud arkitektur. Arrangør af Copenhagen Cloud Native meetups (2.000 medlemmer) og KCD Denmark, han er lige så engageret i community som i kode. Som far til to piger ved Robert på egen krop, at det sværeste ved en legeaftale ikke er at finde tiden — det er at opbygge nok tillid til en anden familie til at sige ja. Det problem er personligt for ham, og det er præcis hvad Playdate er bygget til at løse.",
       "mission.title": "Vores mission",
       "mission.text": "Hvert barn fortjener at opbygge meningsfulde venskaber gennem leg. Vi gør koordinering af legeaftaler ubesværet — om du er dansker eller international, hjemme eller på ferie. Teknologi bør bringe familier sammen, ikke gøre forældrerollen mere kompleks.",
+
+      // Blog teaser
+      "bloghome.eyebrow": "Blog",
+      "bloghome.title": "Fra bloggen",
+      "bloghome.sub": "Små fortællinger om børneliv, forældretøven og de aftaler, der gerne må blive lidt lettere at få til at ske.",
+      "bloghome.date": "20. april 2026 · Playdate",
+      "bloghome.postTitle": "Lørdag formiddag, og ingen har spurgt endnu",
+      "bloghome.excerpt": "Barnet spørger, om man skal lege med nogen i dag. Numrene ligger i telefonen. Alligevel bliver der ikke skrevet.",
+      "bloghome.read": "Læs artiklen →",
+      "bloghome.viewAll": "Se alle artikler →",
+      "bloghome.cardAria": "Læs Lørdag formiddag, og ingen har spurgt endnu",
+      "bloghome.imageAlt": "Et barn bygger LEGO lørdag formiddag, mens en forælder overvejer en legeaftale",
 
       // CTA / Waitlist
       "cta.badge": "🚀 Kommer snart",
@@ -166,6 +179,7 @@ var I18N = (function () {
       "nav.cta": "Join Waitlist →",
       "nav.ctaShort": "Join",
       "nav.ctaLaunched": "Download →",
+      "nav.menu": "Open menu",
       "lang.toggle": "DA",
 
       // Hero
@@ -235,6 +249,18 @@ var I18N = (function () {
       "founder.robert.bio": "With 15+ years in cloud and platform engineering, Robert brings deep DevOps expertise to the team — from CI/CD pipelines and Kubernetes to Terraform and multi-cloud architecture. Organiser of Copenhagen Cloud Native meetups (2,000 members) and KCD Denmark, he's as committed to community as he is to code. As a father of two girls, Robert knows first-hand that the hardest part of setting up a playdate isn't finding the time — it's building enough trust with another family to feel comfortable saying yes. That problem is personal to him, and it's exactly what Playdate is designed to solve.",
       "mission.title": "Our Mission",
       "mission.text": "Every child deserves the opportunity to build meaningful friendships through play. We're making playdate coordination effortless — whether you're a Danish native or an international expat, whether you're at home or on holiday. Technology should bring families together, not add complexity to parenting.",
+
+      // Blog teaser
+      "bloghome.eyebrow": "Blog",
+      "bloghome.title": "From the blog",
+      "bloghome.sub": "Small stories about children's friendships, parental hesitation, and the plans that should be easier to make happen.",
+      "bloghome.date": "April 20, 2026 · Playdate",
+      "bloghome.postTitle": "Saturday morning, and no one's asked yet",
+      "bloghome.excerpt": "The child asks if they can play with someone today. The numbers are in the phone. No one gets a message.",
+      "bloghome.read": "Read the article →",
+      "bloghome.viewAll": "See all articles →",
+      "bloghome.cardAria": "Read Saturday morning, and no one's asked yet",
+      "bloghome.imageAlt": "A child building LEGO on a Saturday morning while a parent considers arranging a playdate",
 
       // CTA / Waitlist
       "cta.badge": "🚀 Coming soon",
@@ -329,6 +355,10 @@ var I18N = (function () {
 
     document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
       el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria"), lang));
+    });
+
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+      el.setAttribute("alt", t(el.getAttribute("data-i18n-alt"), lang));
     });
 
     localStorage.setItem(STORAGE_KEY, lang);
