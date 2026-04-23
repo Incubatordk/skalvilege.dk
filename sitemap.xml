@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://incubatordk.github.io/skalvilege.dk/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://incubatordk.github.io/skalvilege.dk/assets/logo.png</image:loc>
+      <image:title>Playdate</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://incubatordk.github.io/skalvilege.dk/privacy-policy/</loc>
@@ -29,5 +34,10 @@
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://incubatordk.github.io/skalvilege.dk/assets/blog/playdate-19-04.jpg</image:loc>
+      <image:title>Et barn bygger LEGO lørdag formiddag, mens en forælder overvejer en legeaftale</image:title>
+      <image:caption>Lørdag formiddag, og ingen har spurgt endnu — om tærsklen for en lørdags-playdate.</image:caption>
+    </image:image>
   </url>
 </urlset>

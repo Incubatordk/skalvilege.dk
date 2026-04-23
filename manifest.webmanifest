@@ -1,0 +1,27 @@
+{
+  "name": "Playdate — Din landsby i lommen",
+  "short_name": "Playdate",
+  "description": "En tryggere og enklere måde at arrangere legeaftaler for børn i alderen 0–10 år.",
+  "start_url": "/skalvilege.dk/",
+  "scope": "/skalvilege.dk/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "lang": "da-DK",
+  "categories": ["lifestyle", "social", "parenting"],
+  "icons": [
+    {
+      "src": "/skalvilege.dk/assets/logo-no-background.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/skalvilege.dk/assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
