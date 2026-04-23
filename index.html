@@ -151,11 +151,15 @@
       <a href="#home" class="nav-logo" aria-label="Playdate">
         <img src="assets/logo-no-background.svg" alt="Playdate" width="36" height="36">
       </a>
-      <ul class="nav-links">
+      <ul id="nav-menu" class="nav-links">
         <li><a href="#features" data-i18n="nav.features">Funktioner</a></li>
         <li><a href="#how-it-works" data-i18n="nav.how">Sådan virker det</a></li>
         <li><a href="#founders" data-i18n="nav.about">Om os</a></li>
         <li><a href="blog/" data-i18n="nav.blog">Blog</a></li>
+        <li class="nav-links-cta">
+          <a href="#cta" data-mode-only="prelaunch" data-i18n="nav.cta">Tilmeld venteliste →</a>
+          <a href="#cta" class="hidden" data-mode-only="launched" data-i18n="nav.ctaLaunched">Download →</a>
+        </li>
       </ul>
       <div class="nav-actions">
         <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">
@@ -163,6 +167,13 @@
         </button>
         <a href="#cta" class="btn btn-primary btn-primary-sm" data-mode-only="prelaunch" data-i18n="nav.cta">Tilmeld venteliste →</a>
         <a href="#cta" class="btn btn-primary btn-primary-sm hidden" data-mode-only="launched" data-i18n="nav.ctaLaunched">Download →</a>
+        <button id="nav-toggle" class="nav-toggle" type="button"
+                aria-label="Menu" aria-expanded="false" aria-controls="nav-menu"
+                data-i18n-aria="nav.menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
       </div>
     </div>
   </nav>
@@ -516,6 +527,38 @@
         <div class="mission" data-animate>
           <h3 data-i18n="mission.title">Vores mission</h3>
           <p data-i18n="mission.text">Hvert barn fortjener...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog teaser -->
+    <section id="blog" class="blog-home">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="bloghome.eyebrow">Blog</p>
+          <h2 data-i18n="bloghome.title">Fra bloggen</h2>
+          <p data-i18n="bloghome.sub">Små fortællinger om børneliv, forældretøven og de aftaler, der gerne må blive lidt lettere at få til at ske.</p>
+        </div>
+
+        <article class="blog-card" data-animate>
+          <a href="blog/lordag-formiddag/" class="blog-card-image"
+             data-i18n-aria="bloghome.cardAria"
+             aria-label="Læs Lørdag formiddag, og ingen har spurgt endnu">
+            <img src="assets/blog/playdate-19-04.jpg"
+                 alt="Et barn bygger LEGO lørdag formiddag, mens en forælder overvejer en legeaftale"
+                 data-i18n-alt="bloghome.imageAlt"
+                 width="1408" height="768" loading="lazy" decoding="async">
+          </a>
+          <div class="blog-card-body">
+            <p class="post-meta" data-i18n="bloghome.date">20. april 2026 · Playdate</p>
+            <h3><a href="blog/lordag-formiddag/" data-i18n="bloghome.postTitle">Lørdag formiddag, og ingen har spurgt endnu</a></h3>
+            <p data-i18n="bloghome.excerpt">Barnet spørger, om man skal lege med nogen i dag. Numrene ligger i telefonen. Alligevel bliver der ikke skrevet.</p>
+            <a href="blog/lordag-formiddag/" class="read-more" data-i18n="bloghome.read">Læs artiklen →</a>
+          </div>
+        </article>
+
+        <div class="blog-home-cta">
+          <a href="blog/" class="btn btn-outline" data-i18n="bloghome.viewAll">Se alle artikler →</a>
         </div>
       </div>
     </section>

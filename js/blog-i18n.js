@@ -53,6 +53,7 @@
       "nav.about": "Om os",
       "nav.blog": "Blog",
       "nav.cta": "Tilmeld venteliste →",
+      "nav.menu": "Åbn menu",
       "footer.privacy": "Privatlivspolitik",
       "footer.terms": "Vilkår og betingelser",
       "footer.copy": "© 2026 Playdate. Alle rettigheder forbeholdes.",
@@ -75,6 +76,7 @@
       "nav.about": "About Us",
       "nav.blog": "Blog",
       "nav.cta": "Join Waitlist →",
+      "nav.menu": "Open menu",
       "footer.privacy": "Privacy Policy",
       "footer.terms": "Terms & Conditions",
       "footer.copy": "© 2026 Playdate. All rights reserved.",
@@ -154,6 +156,37 @@
     if (langBtn) {
       langBtn.addEventListener("click", function () {
         apply((document.documentElement.lang || DEFAULT_LANG) === "da" ? "en" : "da");
+      });
+    }
+
+    var nav = document.querySelector(".nav");
+    var navToggle = document.getElementById("nav-toggle");
+    var navMenu = document.getElementById("nav-menu");
+    if (nav && navToggle && navMenu) {
+      var setMenu = function (open) {
+        nav.setAttribute("data-menu-open", open ? "true" : "false");
+        navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      };
+
+      navToggle.addEventListener("click", function () {
+        setMenu(nav.getAttribute("data-menu-open") !== "true");
+      });
+
+      navMenu.addEventListener("click", function (e) {
+        if (e.target.tagName === "A") setMenu(false);
+      });
+
+      document.addEventListener("click", function (e) {
+        if (nav.getAttribute("data-menu-open") !== "true") return;
+        if (nav.contains(e.target)) return;
+        setMenu(false);
+      });
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && nav.getAttribute("data-menu-open") === "true") {
+          setMenu(false);
+          navToggle.focus();
+        }
       });
     }
   });

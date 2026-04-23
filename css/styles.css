@@ -353,6 +353,10 @@ button {
   gap: var(--space-sm);
 }
 
+.nav-actions .btn {
+  display: none;
+}
+
 .lang-toggle {
   display: inline-flex;
   align-items: center;
@@ -378,6 +382,87 @@ button {
 
 .lang-toggle:active {
   transform: scale(0.96);
+}
+
+/* Hamburger — visible on mobile only (toggled off at ≥768px below) */
+.nav-toggle {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+
+.nav-toggle:hover {
+  border-color: var(--color-primary);
+}
+
+.nav-toggle-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Mobile menu: when toggle open, show the links as a dropdown panel */
+.nav[data-menu-open="true"] .nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: var(--space-lg);
+  background: #fff;
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+}
+
+.nav[data-menu-open="true"] .nav-links-cta {
+  margin-top: var(--space-sm);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.nav[data-menu-open="true"] .nav-links-cta a {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+}
+
+.nav[data-menu-open="true"] .nav-links a {
+  display: block;
+  padding: var(--space-sm) 0;
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 /* ==========================================================================
@@ -1273,14 +1358,30 @@ button {
   object-fit: cover;
 }
 
-.blog-card-body h2 {
+.blog-card-body h2,
+.blog-card-body h3 {
   margin-bottom: var(--space-sm);
   font-size: var(--text-3xl);
   line-height: 1.16;
 }
 
-.blog-card-body h2 a {
+.blog-card-body h2 a,
+.blog-card-body h3 a {
   color: var(--color-text);
+}
+
+/* Homepage blog teaser */
+.blog-home {
+  padding: var(--space-3xl) 0;
+}
+
+.blog-home .section-header {
+  margin-bottom: var(--space-2xl);
+}
+
+.blog-home-cta {
+  margin-top: var(--space-xl);
+  text-align: center;
 }
 
 .blog-card-body p:not(.post-meta) {
@@ -1931,6 +2032,18 @@ button {
 
   .nav-links {
     display: flex;
+  }
+
+  .nav-links-cta {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-actions .btn {
+    display: inline-flex;
   }
 
   .blog-card {

@@ -84,17 +84,25 @@
       <a href="../../" class="nav-logo" aria-label="Playdate">
         <img src="../../assets/logo-no-background.svg" alt="Playdate" width="36" height="36">
       </a>
-      <ul class="nav-links">
+      <ul id="nav-menu" class="nav-links">
         <li><a href="../../#features" data-blog-i18n="nav.features">Funktioner</a></li>
         <li><a href="../../#how-it-works" data-blog-i18n="nav.how">Sådan virker det</a></li>
         <li><a href="../../#founders" data-blog-i18n="nav.about">Om os</a></li>
         <li><a href="../" aria-current="true" data-blog-i18n="nav.blog">Blog</a></li>
+        <li class="nav-links-cta"><a href="../../#cta" data-blog-i18n="nav.cta">Tilmeld venteliste →</a></li>
       </ul>
       <div class="nav-actions">
         <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language">
           <span data-blog-i18n="lang.toggle">EN</span>
         </button>
         <a href="../../#cta" class="btn btn-primary btn-primary-sm" data-blog-i18n="nav.cta">Tilmeld venteliste →</a>
+        <button id="nav-toggle" class="nav-toggle" type="button"
+                aria-label="Menu" aria-expanded="false" aria-controls="nav-menu"
+                data-blog-i18n-aria="nav.menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
       </div>
     </div>
   </nav>
